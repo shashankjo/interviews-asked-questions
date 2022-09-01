@@ -2,18 +2,18 @@
 #Introduction
 # You are working on a flight management system that helps travelers to find flights between desired destinations and staff to add flights and generate flight seats.
 #
-#   Problem statement
+# Problem statement
 # To complete this task you need to implement following methods:
 #
-#                                                         SeatsGenerator.create_seats(rows, seats_in_row, first_row_number)
+# SeatsGenerator.create_seats(rows, seats_in_row, first_row_number)
 # FlightManager.find_flights_between(origin, destination, direction_sensitive)
 # FlightManager.add_new_flight(flight_number, origin, destination)
 # SeatsGenerator.create_seats() method
 # The method allows you to create a list of seats where each seat is represented in <integer><string> format, ex.: 2A.
 #
-#   Method accept three arguments:
+# Method accept three arguments:
 #
-#                         rows which type is integer
+# rows which type is integer
 # seats_in_row which type is integer
 # first_row_number which type integer
 # and returns array as a result, ex.:
@@ -24,14 +24,15 @@
 # FlightManager.find_flights_between() method
 # The method allows you to find flights for provided destinations.
 #
-#   The method accepts three arguments:
+# The method accepts three arguments:
 #
-#                              origin which type is string
+# origin which type is string
 # destination which type is string
 # direction_sensitive which type is boolean
+# 
 # and returns:
 #
-#   empty array when no flights were found
+# empty array when no flights were found
 # array with hash elements when flights were found
 # hash element needs to contain flight_number, origin and destination keys with string values, ex.:
 #
@@ -56,9 +57,9 @@
 # FlightManager.add_new_flight() method
 # The method allows you to add a new flight to flight storage. Flight storage can be implemented as a simple array that does not accept duplicate flights.
 #
-#   The method accepts three arguments:
+# The method accepts three arguments:
 #
-#                              flight_number which type is string
+# flight_number which type is string
 # origin which type is string
 # destination which type is string
 # and returns a boolean value:
@@ -76,7 +77,6 @@
 # false
 # Validation
 # Run bundle exec rake test to verify your implementation.
-#
 #
 #
 # =============================================================
@@ -106,7 +106,6 @@
 
   # rubocop:disable Style/Documentation
   class FlightManager
-
     def initialize
       @flight_array = []
     end
